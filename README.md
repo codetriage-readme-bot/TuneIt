@@ -1,6 +1,6 @@
 # TuneIt
 
-[![](https://www.jitpack.io/v/CuriousNikhil/TuneIt.svg)](https://www.jitpack.io/#CuriousNikhil/TuneIt)
+[![](https://www.jitpack.io/v/CuriousNikhil/TuneIt.svg)](https://www.jitpack.io/#CuriousNikhil/TuneIt) [![Open Source Helpers](https://www.codetriage.com/curiousnikhil/tuneit/badges/users.svg)](https://www.codetriage.com/curiousnikhil/tuneit)
 <br>
 <br>
 TuneIt is an android library that let's you to create awesome PCM (Pulse-Code Modulation 16 bit) tones in your app!
@@ -10,7 +10,7 @@ The setup is very easy just follow the following steps:
 <h4>step1</h4>
 Add the JitPack repository to your build file
 <pre>
-<code> 
+<code>
 allprojects {
 		repositories {
 			...
@@ -49,7 +49,7 @@ Now in <code>version 1.0.1</code> Added a new utility class <code>Frequency</cod
 You can use three octave frequencies of sound <br>
 
 <code>
-1.LOW 
+1.LOW
 </code><br>
 <code>
 2.MID
@@ -68,12 +68,12 @@ If you want to play specific note from the specific frequency octave, It's added
 And you can do it as follows:<br>
 <pre>
 	<code>
-		
+
 	/*
-	You can just set frequency to 
+	You can just set frequency to
 	Frequency.MID_C and similarly MID_A, MID_B, MID_D, MID_F
 	*/
-		
+
 		TuneIt.getInitialised().create(Frequency.MID_C, duration, volume, new StopToneListener() {
                         @Override
                         public void onTrackStopped() {
@@ -82,12 +82,12 @@ And you can do it as follows:<br>
 			   //...
                         }
                     });
-	
+
 	</code>
 </pre>
 
 
-Initialise or assign 
+Initialise or assign
 <code>frequency</code> as <code>int</code><br>
 <code>duration</code> as <code>int</code><br>
 <code>volume</code> as <code>double (ex: 1.0f for max volume)</code><br><br>
